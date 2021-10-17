@@ -1,8 +1,6 @@
-import React from 'react';
-
 const myLogger = (store) => (next) => (action) => {
   console.log(action);
-  const result = next(aciton);
+  const result = next(action);
   return result;
 };
 
